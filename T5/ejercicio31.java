@@ -7,7 +7,7 @@ public class ejercicio31 {
             System.out.println("*");
             if (i == altura-1) {
                 for (int j = 0; j < ((altura+ 1)/2); j++) {
-                    System.out.print("*");
+                    System.out.print("* ");
                 }
             }
         }
