@@ -14,7 +14,7 @@ public class ejercicio64 {
             }else {
                 System.out.print("*");
                 for (int j = 1; j <= (anchura - 2); j++) {
-                    System.out.print(".");
+                    System.out.print(" ");
                 }
                 System.out.println("*");
             }
