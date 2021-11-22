@@ -1,28 +1,28 @@
 public class ejerciciodeclase {
   public static void main(String[] args) {
-    int size, mitad, minimo, numeroPintado;
+    int tamaño, exterior, min, pintar;
 
     System.out.print("Introduzca el tamaño del anillo (impar): ");
-    size = Integer.parseInt(System.console().readLine());
+    tamaño = Integer.parseInt(System.console().readLine());
 
     System.out.println();
 
-    mitad = size / 2 + 1;
+    exterior = tamaño / 2 + 1;
 
-    for (int i = 0; i < size; i++) {
-      numeroPintado = mitad;
+    for (int i = 0; i < tamaño; i++) {
+      pintar = exterior;
 
-      for (int j = 1; j <= size; j++) {
-        System.out.print(numeroPintado + " ");
+      for (int j = 1; j <= tamaño; j++) {
+        System.out.print(pintar + " ");
 
-        if (i + 1 > mitad) minimo = i - mitad + 2;
-        else minimo = mitad - i;
+        if (i + 1 > exterior) min = i - exterior + 2;
+        else min = exterior - i;
 
 
-        if (numeroPintado > minimo && j < mitad) numeroPintado--;
-        else if (i + 1 > mitad) {
-          if (j >= size - (mitad - minimo)) numeroPintado++;
-        } else if (j >= size - i) numeroPintado++;
+        if (pintar > min && j < exterior) pintar--;
+        else if (i + 1 > exterior) {
+          if (j >= tamaño - (exterior - min)) pintar++;
+        } else if (j >= tamaño - i) pintar++;
       }
       System.out.println();
     }
